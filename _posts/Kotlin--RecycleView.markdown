@@ -1,9 +1,9 @@
 
 ---
 layout:     post
-title:      "Hello 2018"
-subtitle:   " \"Hello World, Hello Blog\""
-date:       2015-07-11 12:00:00
+title:      "Kotlin--RecycleView"
+subtitle:   " \"kotlin入门之RecycleView \""
+date:       2015-07-12 12:00:00
 author:     "SuXi"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
