@@ -2,7 +2,7 @@
 layout:     post
 title:      "Kotlin--RecycleView"
 subtitle:   " \"kotlin入门之RecycleView \""
-date:       2015-07-12 12:00:00
+date:       2017-07-12 12:00:00
 author:     "SuXi"
 header-img: "img/post-bg-2015.jpg"
 catalog: true

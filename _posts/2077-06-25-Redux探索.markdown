@@ -1,0 +1,41 @@
+---
+layout:     post
+title:      "ReactNative--Redux初探"
+subtitle:   " \"ReactNative--Redux初探 \""
+date:       2017-07-12 12:00:00
+author:     "SuXi"
+header-img: "img/post-bg-2015.jpg"
+catalog: true
+tags:
+    - ReactNative
+---
+
+## 前言
+
+学习了一段时间ReactNative，写了几个简单的Demo，突然就不知道从哪里看到了Redux,因为本人现在从事的是android，且没有前端开发的经验，所以学起Redux感觉很吃力，啃了几天的硬骨头也没能啃下来。
+
+看过不少Redux的教程，但总是不得要领，什么数据流向，什么全局变量，Redux在脑子里始终是一团雾水。
+
+今天突然跟前端的同事（她使用的vue）讨教Redux问题，想看看能不能从Vue中的实现得到启发，讨论中突然犹如醍醐灌顶，直到那一刻我才彻彻底底知道Redux到底有何作用。
+
+## 正文
+
+#### 理解Redux
+
+其实官方有给过一个TODO的例子，可惜天生愚钝，到现在才弄明白其中奥秘。
+
+于是班门弄斧一会，为那些与我有相似遭遇的人翻译翻译什么TMD叫Redux。
+
+"img/lizi.jpg"
+
+如上图：我们一上面这种结构来实现一个简单功能，Component1 用来显示一个常数，Component3、Component4分别提供+/-运算功能，我们通过点击Component3或Component4来对这个常数进行计算，并将计算显示在Component2上面。
+
+我们来分析下如何实现这个功能，可能有人会说这也太简单了，用两个TextView与两个Button就能实现。然后用一个View包裹住，return出去就行。确实对于学过React基础的人都能实现这个功能，但现在为了让大家明白Redux的中心思想，我们要将这个简单功能复杂化，Component1与Component2虽然使用TextView但是我们要包一层做些炫酷的特效，比如跑马灯什么的。Component3与Component4也做一些炫酷的功能，如果几个Component的实现代码都放到一个View里面代码就显得臃肿，这个时候就要有封装的思想，我们将几个Component分别实现，然后统一引入。
+
+那么重点来了，因为几个Component不在同一个js文件中，点击Component3/Component4时，我们实时的将结果在Component3中显示，又该如何实现？大家停顿几分钟思考一下。
+
+这时Redux的作用就显示出来了，学过java或ObjectC的人这个时候可能会意识到这不就是我们耳熟能详的观察者模式吗？
+
+
+> Tip: React中的Redux其实就是相当于java中的观察者模式
+
