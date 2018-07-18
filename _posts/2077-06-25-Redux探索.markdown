@@ -4,7 +4,7 @@ title:      "ReactNative--Redux初探"
 subtitle:   " \"ReactNative--Redux初探 \""
 date:       2017-07-12 12:00:00
 author:     "SuXi"
-header-img: "img/post-bg-2015.jpg"
+header-img: "img/redux-bg-2015.jpg"
 catalog: true
 tags:
     - ReactNative
@@ -26,7 +26,7 @@ tags:
 
 于是班门弄斧一会，为那些与我有相似遭遇的人翻译翻译什么TMD叫Redux。
 
-"img/lizi.jpg"
+![image](img/lizi.jpg)
 
 如上图：我们一上面这种结构来实现一个简单功能，Component1 用来显示一个常数，Component3、Component4分别提供+/-运算功能，我们通过点击Component3或Component4来对这个常数进行计算，并将计算显示在Component2上面。
 
